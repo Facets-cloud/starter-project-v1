@@ -24,7 +24,7 @@
       },
       "reader": {
         "cpu": "250m",
-        "memory": "256Mi",
+        "memory": "255Mi",
         "cpu_limit": "500m",
         "memory_limit": "512Mi",
         "volume": "10Gi",
