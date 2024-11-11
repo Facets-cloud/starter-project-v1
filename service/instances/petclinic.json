@@ -37,9 +37,9 @@
         }
       },
       "size": {
-        "cpu": "300m",
-        "memory": "1Gi",
-        "cpu_limit": "1000m",
+        "cpu": "100m",
+        "memory": "500Mi",
+        "cpu_limit": "200m",
         "memory_limit": "5Gi"
       },
       "health_checks": {
@@ -53,8 +53,7 @@
         "liveness_period": "30",
         "liveness_port": "8080",
         "liveness_start_up_time": "15"
-      },
-      "volumes": {}
+      }
     },
     "env": {
       "LOG_LEVEL": "INFO",
@@ -62,6 +61,11 @@
       "POSTGRES_PASS": "${postgres.postgres.out.interfaces.writer.password}",
       "SPRING_PROFILES_ACTIVE": "postgres",
       "POSTGRES_URL": "jdbc:postgresql://${postgres.postgres.out.interfaces.writer.host}/postgres"
+    },
+    "cloud_permissions": {
+      "aws": {
+        "enable_irsa": false
+      }
     }
   }
 }
