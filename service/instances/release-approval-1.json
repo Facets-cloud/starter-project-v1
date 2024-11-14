@@ -7,7 +7,7 @@
   },
   "$schema": "https://facets-cloud.github.io/facets-schemas/schemas/service/service.schema.json",
   "kind": "service",
-  "disabled": false,
+  "disabled": true,
   "version": "0.1",
   "spec": {
     "enable_host_anti_affinity": false,
