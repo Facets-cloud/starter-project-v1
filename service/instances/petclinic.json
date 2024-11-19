@@ -38,7 +38,7 @@
       },
       "size": {
         "cpu": "100m",
-        "memory": "300Mi",
+        "memory": "290Mi",
         "cpu_limit": "111m",
         "memory_limit": "1Gi"
       },
