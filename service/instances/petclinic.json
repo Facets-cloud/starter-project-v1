@@ -37,10 +37,10 @@
         }
       },
       "size": {
-        "cpu": "100m",
-        "memory": "290Mi",
-        "cpu_limit": "111m",
-        "memory_limit": "1Gi"
+        "cpu": "300m",
+        "cpu_limit": "1000m",
+        "memory": "1Gi",
+        "memory_limit": "5Gi"
       },
       "health_checks": {
         "readiness_check_type": "PortCheck",
