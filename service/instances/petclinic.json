@@ -57,7 +57,7 @@
     },
     "env": {
       "LOG_LEVEL": "INFO",
-      "POSTGRES_STRING": "https://testu1.${postgres.postgres.out.interfaces.reader.username}/${postgres.postgres.out.interfaces.reader.host}",
+      "POSTGRES_STRING": "https://testu1.${postgres.postgres.out.interfaces.reader.username}/${postgres.postgres.out.interfaces.reader.connection_string}",
       "POSTGRES_USER": "https://${postgres.postgres.out.interfaces.writer.username}/testing/${postgres.postgres.out.interfaces.reader.password}"
     },
     "cloud_permissions": {
