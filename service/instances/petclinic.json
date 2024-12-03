@@ -57,8 +57,10 @@
     },
     "env": {
       "LOG_LEVEL": "INFO",
-      "POSTGRES_STRING": "https://testu1.${postgres.postgres.out.interfaces.reader.username}/${postgres.postgres.out.interfaces.reader.connection_string}",
-      "POSTGRES_USER": "https://${postgres.postgres.out.interfaces.writer.username}/testing/${postgres.postgres.out.interfaces.reader.password}"
+      "SPRING_PROFILES_ACTIVE": "postgres",
+      "POSTGRES_USER": "${postgres.pet-db.out.interfaces.writer.username}",
+      "POSTGRES_PASS": "${postgres.pet-db.out.interfaces.writer.password}",
+      "POSTGRES_URL": "jdbc:postgresql://${postgres.pet-db.out.interfaces.writer.host}/petclinic"
     },
     "cloud_permissions": {
       "aws": {
