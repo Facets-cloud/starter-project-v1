@@ -58,9 +58,9 @@
     "env": {
       "LOG_LEVEL": "INFO",
       "SPRING_PROFILES_ACTIVE": "postgres",
-      "POSTGRES_USER": "${postgres.pet-db.out.interfaces.writer.username}",
-      "POSTGRES_PASS": "${postgres.pet-db.out.interfaces.writer.password}",
-      "POSTGRES_URL": "jdbc:postgresql://${postgres.pet-db.out.interfaces.writer.host}/petclinic"
+      "POSTGRES_USER": "${postgres.postgres.out.interfaces.writer.username}",
+      "POSTGRES_PASS": "${postgres.postgres.out.interfaces.writer.password}",
+      "POSTGRES_URL": "jdbc:postgresql://${postgres.postgres.out.interfaces.writer.host}/petclinic"
     },
     "cloud_permissions": {
       "aws": {
