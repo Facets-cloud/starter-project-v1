@@ -60,7 +60,8 @@
       "SPRING_PROFILES_ACTIVE": "postgres",
       "POSTGRES_USER": "${postgres.postgres.out.interfaces.writer.username}",
       "POSTGRES_PASS": "${postgres.postgres.out.interfaces.writer.password}",
-      "POSTGRES_URL": "jdbc:postgresql://${postgres.postgres.out.interfaces.writer.host}/petclinic"
+      "POSTGRES_URL": "jdbc:postgresql://${postgres.postgres.out.interfaces.writer.host}/petclinic",
+      "POSTGRES_DB_NAMES": "https://${postgres.postgres.out.interfaces.reader.db_names}"
     },
     "cloud_permissions": {
       "aws": {
