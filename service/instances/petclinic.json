@@ -57,9 +57,8 @@
     },
     "env": {
       "LOG_LEVEL": "INFO",
-      "POSTGRES_USER": "${postgres.postgres.out.interfaces.writer.username}",
-      "POSTGRES_PASS": "${postgres.postgres.out.interfaces.writer.password}",
       "SPRING_PROFILES_ACTIVE": "postgres",
+      "POSTGRES_USER": "https://${postgres.postgres.out.interfaces.writer.username}/testing/${postgres.postgres.out.interfaces.reader.password}",
       "POSTGRES_URL": "jdbc:postgresql://${postgres.postgres.out.interfaces.writer.host}/postgres"
     },
     "cloud_permissions": {
