@@ -58,7 +58,8 @@
     "env": {
       "LOG_LEVEL": "INFO",
       "POSTGRES_USER": "https://${postgres.postgres.out.interfaces.writer.username}/testing/${postgres.postgres.out.interfaces.reader.password}",
-      "POSTGRES_URL": "jdbc:postgresql://${postgres.postgres.out.interfaces.writer.host}/postgres"
+      "POSTGRES_URL": "jdbc:postgresql://${postgres.postgres.out.interfaces.writer.host}/postgres",
+      "POSTGRES_STRING": "https://testu1.${postgres.postgres.out.interfaces.reader.username}/${postgres.postgres.out.interfaces.reader.host}"
     },
     "cloud_permissions": {
       "aws": {
