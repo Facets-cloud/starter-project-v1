@@ -19,8 +19,7 @@
       "build": {
         "artifactory": "default",
         "name": "replace-with-app-name"
-      },
-      "image": "facetscloud/petclinic:1.0"
+      }
     },
     "runtime": {
       "autoscaling": {
