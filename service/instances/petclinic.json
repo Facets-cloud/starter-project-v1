@@ -19,7 +19,8 @@
       "build": {
         "artifactory": "default",
         "name": "replace-with-app-name"
-      }
+      },
+      "image": "facetscloud/petclinic:1.0"
     },
     "runtime": {
       "autoscaling": {
@@ -56,10 +57,10 @@
     },
     "env": {
       "LOG_LEVEL": "INFO",
-      "SPRING_PROFILES_ACTIVE": "postgres",
-      "POSTGRES_DB_NAMES": "https://${postgres.postgres.out.interfaces.reader.db_names}",
       "POSTGRES_USER": "${postgres.postgres.out.interfaces.writer.username}",
-      "POSTGRES_PASS": "${postgres.postgres.out.interfaces.writer.password}"
+      "POSTGRES_PASS": "${postgres.postgres.out.interfaces.writer.password}",
+      "SPRING_PROFILES_ACTIVE": "postgres",
+      "POSTGRES_URL": "jdbc:postgresql://${postgres.postgres.out.interfaces.writer.host}/postgres"
     },
     "cloud_permissions": {
       "aws": {
